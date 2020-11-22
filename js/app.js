@@ -73,3 +73,32 @@ $('.home-carosel-wrapper').slick({
 
   });
       
+
+  // drop down cards
+   const dropDownAnimation = () => {
+    const dropDown = document.querySelector('.faculty-drop-down a');
+    const dropDownIcon = document.querySelector('.faculty-drop-down a img');
+    const bio = document.querySelector('.faculty-members-description');
+   
+    dropDown.addEventListener('click', ()=> {
+      if (bio.style.display === "block") {
+        bio.style.display = "none";
+      } else {
+        bio.style.display = "block";
+      }
+    });
+
+    dropDown.addEventListener('click', ()=> {
+      if (dropDownIcon.style.animation) {
+        dropDownIcon.style.animation = ''
+     } else {
+        dropDownIcon.style.animation = `dropDownUp 0.2s ease forwards`;
+     }
+   
+    })
+
+
+
+   }
+
+   dropDownAnimation();
