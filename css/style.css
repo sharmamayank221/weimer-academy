@@ -4,6 +4,7 @@
 @import "/css/about.css";
 @import "/css/resources.css";
 @import "/css/apply.css";
+@import "/css/blog.css";
 
 :root {
   --primary-color: #021032;

@@ -13,7 +13,7 @@ const navSlide = () => {
         if (link.style.animation) {
            link.style.animation = ''
         } else {
-           link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+           link.style.animation = `navLinkFade 0.5s ease forwards ${index / 10 + 0.3}s`;
         }
        
        })
@@ -81,21 +81,18 @@ $('.home-carosel-wrapper').slick({
     const bio = document.querySelector('.faculty-members-description');
    
     dropDown.addEventListener('click', ()=> {
-      if (bio.style.display === "block") {
+      if (bio.style.display === "block" && dropDownIcon.style.animation) {
         bio.style.display = "none";
+        
+        dropDownIcon.style.animation = ''
       } else {
         bio.style.display = "block";
+        dropDownIcon.style.animation = `dropDownUp 0.2s ease forwards`;
+        bio.style.animation = "facultyDescription ";
       }
     });
 
-    dropDown.addEventListener('click', ()=> {
-      if (dropDownIcon.style.animation) {
-        dropDownIcon.style.animation = ''
-     } else {
-        dropDownIcon.style.animation = `dropDownUp 0.2s ease forwards`;
-     }
-   
-    })
+  
 
 
 

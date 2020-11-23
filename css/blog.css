@@ -1,0 +1,462 @@
+:root {
+  --primary-color: #021032;
+  --bg-yellow: #fdd247;
+  --bg-secondary: #2e2e36;
+}
+
+/* blog archieve css  */
+
+.blog-archieve {
+  width: 100%;
+  background: #ffffff;
+}
+
+.blog-archieve h1 {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10.8rem;
+  line-height: 103.9%;
+  color: var(--primary-color);
+  padding-top: 15.8rem;
+  margin-left: 10%;
+  padding-bottom: 7.5rem;
+}
+
+.blog-archieve-hero {
+  width: 100%;
+  height: 34rem;
+}
+
+.blog-archieve-hero img {
+  width: 100%;
+  height: 100%;
+  object-position: bottom;
+  object-fit: cover;
+}
+
+.blog-posts {
+  width: 100%;
+}
+
+.blog-post-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 8.6rem;
+  margin-bottom: 12.3rem;
+}
+
+.blog-single-post-container {
+  display: flex;
+  width: 100%;
+}
+
+.single-blog-post {
+  background: #ffffff;
+  box-shadow: 0px 14px 27px rgba(173, 186, 217, 0.3);
+  border-radius: 8px;
+  flex: 1 1 50%;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
+
+.single-blog-filters {
+  display: flex;
+  padding-left: 4rem;
+  margin-top: 4.4rem;
+}
+
+.single-blog-filters a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 158.88%;
+  color: var(--bg-secondary);
+  opacity: 0.64;
+  margin-right: 1rem;
+  text-decoration: none;
+  margin-bottom: 1.6rem;
+}
+
+.single-blog-post a {
+  text-decoration: none;
+}
+
+.single-blog-post a h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 129.88%;
+  color: var(--primary-color);
+  padding-left: 4rem;
+  padding-bottom: 0.8rem;
+}
+
+.single-blog-post p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 158.88%;
+  color: var(--primary-color);
+  opacity: 0.8;
+  padding-left: 4rem;
+  width: 80%;
+  padding-bottom: 7.7rem;
+}
+
+/* 2020 mission trip Css */
+.twentytwenty-mission-trip {
+  width: 100%;
+  background: #ffffff;
+}
+
+.twentytwenty-mission-trips-info {
+  margin-left: 10%;
+  margin-bottom: 9.4rem;
+}
+
+.twentytwenty-mission-trips-info h1 {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.8rem;
+  line-height: 103.9%;
+  color: var(--primary-color);
+  padding-top: 15.8rem;
+
+  padding-bottom: 1.6rem;
+}
+
+.twentytwenty-mission-trips-info a {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 103.9%;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.twentytwenty-mission-trips-info a::after {
+  content: "|";
+}
+
+.twentytwenty-mission-trip-hero {
+  width: 100%;
+  height: 34rem;
+}
+
+.twentytwenty-mission-trip-hero img {
+  width: 100%;
+  height: 100%;
+  object-position: bottom;
+  object-fit: cover;
+}
+
+.twentytwenty-mission-trip-info {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 9rem;
+}
+
+.twentytwenty-mission-trip-info > p:first-child {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  color: var(--primary-color);
+}
+
+.twentytwenty-mission-trip-info p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  color: var(--primary-color);
+  padding-top: 3.5rem;
+}
+.twentytwenty-mission-trip-info p:last-child {
+  padding-bottom: 7rem;
+}
+
+.twentytwenty-mission-trip-info h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 156.4%;
+  color: var(--primary-color);
+  padding-top: 2.9rem;
+}
+
+.twentytwenty-mission-trip-info h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.54rem;
+  color: var(--primary-color);
+  margin-bottom: 12.3rem;
+}
+
+.twentytwenty-blog-photo-gallery {
+  width: 100%;
+  background: #f3f6fc;
+}
+
+.twentytwenty-blog-photo-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.twentytwenty-blog-photo-container h2 {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.2rem;
+  line-height: 103.9%;
+  color: #000000;
+  padding-top: 17.2rem;
+  padding-bottom: 6.3rem;
+}
+
+.twentytwenty-blog-photo-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.twentytwenty-blog-photo-container img:last-child {
+  margin-bottom: 16rem;
+}
+
+.comments {
+  width: 100%;
+}
+
+.comments-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 12rem;
+}
+
+.comments-number h1 {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.2rem;
+  line-height: 103.9%;
+  color: var(--primary-color);
+  padding-bottom: 4.5rem;
+  border-bottom: 1px solid #c7cddb;
+}
+
+.commentedby {
+  margin-top: 4.5rem;
+  border-bottom: 1px solid #c7cddb;
+}
+
+.commentedby a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 103.9%;
+  color: var(--primary-color);
+  opacity: 0.6;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.commentedby p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 158.88%;
+  color: var(--primary-color);
+  padding-top: 2rem;
+  padding-bottom: 4.4rem;
+}
+
+.submit-a-comment {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.submit-a-comment textarea {
+  background: #f3f6fc;
+  border: 1px solid rgba(199, 205, 219, 0.5);
+  box-sizing: border-box;
+  width: 70%;
+  outline: none;
+  resize: none;
+}
+
+.submit-a-comment h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 156.4%;
+  color: var(--primary-color);
+  padding-top: 5.6rem;
+}
+
+.submit-a-comment p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: var(--primary-color);
+  padding-bottom: 4.1rem;
+}
+
+.submit-a-comment a {
+  color: var(--primary-color);
+}
+
+.submit-a-comment button {
+  background: rgba(253, 210, 71, 0.32);
+  width: 18rem;
+  height: 5.5rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 103.9%;
+  color: #b9b7a9;
+  border: none;
+  margin-top: 4.3rem;
+}
+
+.submit-a-comment button img {
+  opacity: 0.32;
+}
+
+.submit-comment-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17.5rem;
+}
+
+/* blog 2019 mission trip css */
+
+.twentynineteen-mission-trip {
+  width: 100%;
+  background: #ffffff;
+}
+
+.twentynineteen-mission-trips-info {
+  margin-left: 10%;
+  margin-bottom: 9.4rem;
+}
+
+.twentynineteen-mission-trips-info h1 {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.8rem;
+  line-height: 103.9%;
+  color: var(--primary-color);
+  padding-top: 15.8rem;
+  padding-bottom: 1.6rem;
+}
+
+.twentynineteen-mission-trips-info h3 {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 103.9%;
+  color: var(--primary-color);
+}
+
+.twentynineteen-mission-trip-hero {
+  width: 100%;
+  height: 34rem;
+}
+
+.twentynineteen-mission-trip-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.twentynineteen-mission-trip-para {
+  background: var(--bg-yellow);
+}
+.twentynineteen-mission-trip-para p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  color: var(--primary-color);
+  width: 70%;
+  padding-left: 10%;
+  padding-top: 9rem;
+  padding-bottom: 10.4rem;
+}
+
+.twentynineteen-mission-trip-videos {
+  width: 100%;
+}
+
+.mission-trip-vid-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mission-trip-vid-container h1 {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.2rem;
+  line-height: 103.9%;
+  color: #000000;
+  padding-top: 15.9rem;
+  padding-bottom: 3.4rem;
+}
+
+.mission-trip-vid-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.mission-trip-vid-container a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 103.9%;
+  color: #333333;
+  text-decoration: none;
+}
+
+.mission-trip-vid-container:last-child {
+  margin-bottom: 20.4rem;
+}
+
+/* 2018 mission trip css */
+.twentyeighteen-mission-trip {
+  width: 100%;
+  background: #ffffff;
+}
+
+.twentyeighteen-mission-trip h1 {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.8rem;
+  line-height: 103.9%;
+  color: var(--primary-color);
+  padding-top: 15.8rem;
+  padding-bottom: 1.6rem;
+  padding-left: 10%;
+  padding-bottom: 12.5rem;
+}
+
+/* arizona report */
+.twentytwenty-blog-photo-container p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 103.9%;
+  color: #021032;
+  color: var(--primary-color);
+  padding-top: 3.1rem;
+  padding-bottom: 23.5rem;
+}
