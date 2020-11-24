@@ -55,7 +55,7 @@
   background: #ffffff;
 }
 
-.apply-testimonials p {
+.apply-testimonials > p {
   font-style: normal;
   font-weight: normal;
   font-size: 2.4rem;
@@ -68,8 +68,12 @@
 
 .apply-testimonials-container {
   display: flex;
+
   width: 80%;
   margin: 0 auto;
+}
+
+.apply-testimonials-container:first-child {
   margin-top: 7.8rem;
 }
 
@@ -78,6 +82,8 @@
   box-shadow: 0px 14px 27px rgba(173, 186, 217, 0.3);
   border-radius: 8px;
   margin-right: 2rem;
+  width: 37.6rem;
+  margin-bottom: 2.3rem;
 }
 
 .apply-testimonials-card h2 {
@@ -86,6 +92,8 @@
   font-size: 4rem;
   line-height: 158.88%;
   color: var(--bg-yellow);
+  padding-top: 2.7rem;
+  padding-left: 4rem;
 }
 
 .apply-testimonials-card p {
@@ -94,12 +102,19 @@
   font-size: 1.4rem;
   line-height: 158.88%;
   color: var(--primary-color);
+  width: 90%;
+  padding-left: 4rem;
+  padding-bottom: 6.4rem;
 }
 
 .instructions {
   width: 100%;
   background: #f3f6fc;
   height: 100%;
+}
+
+.instructions .instructions-margin {
+  padding-bottom: 10%;
 }
 
 .instructions h1 {
@@ -125,6 +140,11 @@
   border-radius: 8px;
   margin-bottom: 1.2rem;
   display: flex;
+  align-items: flex-start;
+}
+
+.instructions-box:last-child {
+  margin-bottom: 8%;
 }
 
 .instructions-box h2 {
@@ -133,6 +153,9 @@
   font-size: 4rem;
   line-height: 158.88%;
   color: var(--bg-yellow);
+  padding-top: 1.8rem;
+  padding-left: 3.4rem;
+  margin-right: 2.3rem;
 }
 
 .instructions-box p {
@@ -145,25 +168,33 @@
   padding: 2.7rem 0;
 }
 
-.sub-methods ul li {
+.sub-methods-sub-points li {
   list-style: none;
   font-style: normal;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 158.88%;
   color: var(--primary-color);
+  padding-bottom: 3rem;
+  width: 80%;
 }
 
-.sub-methods ul li h3 {
+.sub-methods-sub-points {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sub-methods-sub-points h3 {
   list-style: none;
   font-style: normal;
   font-weight: bold;
   font-size: 1.6rem;
   line-height: 158.88%;
   color: var(--bg-yellow);
+  margin-right: 0.5rem;
 }
 
-.instructions a {
+.instructions:last-child a {
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
@@ -177,4 +208,97 @@
   margin-top: 6.1rem;
   margin-bottom: 14.7rem;
   margin-left: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+  .apply > h1 {
+    font-size: 8rem;
+    line-height: 103.9%;
+    padding-top: 10.8rem;
+    padding-bottom: 5.5rem;
+  }
+
+  .instructions h1 {
+    font-size: 8rem;
+  }
+
+  .apply-para-top p {
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    width: 80%;
+  }
+  .apply-testimonials-container {
+    width: 90%;
+  }
+
+  .apply-testimonials > p {
+    font-size: 2.1rem;
+    line-height: 3.5rem;
+
+    padding-left: 5%;
+  }
+
+  .apply-testimonials-card {
+    width: 40.6rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .apply-testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .apply-testimonials-card {
+    width: 100%;
+  }
+  .apply-testimonials > p {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .apply > h1 {
+    font-size: 6rem;
+  }
+  .instructions h1 {
+    font-size: 6rem;
+  }
+
+  .apply-para-top p {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .apply > h1 {
+    font-size: 5rem;
+  }
+
+  .instructions h1 {
+    font-size: 5rem;
+  }
+
+  .apply-para-top p {
+    font-size: 1.9rem;
+    line-height: 2.9rem;
+    width: 95%;
+  }
+  .apply-testimonials > p {
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+    width: 95%;
+  }
+  .instructions-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .instructions .instructions-margin {
+    padding-bottom: 15%;
+  }
+  .instructions:last-child a {
+    margin-left: 5%;
+  }
 }
