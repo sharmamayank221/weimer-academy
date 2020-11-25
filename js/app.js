@@ -66,9 +66,7 @@ $('.home-carosel-wrapper').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+
   ]
 
   });
@@ -76,21 +74,29 @@ $('.home-carosel-wrapper').slick({
 
   // drop down cards
    const dropDownAnimation = () => {
-    const dropDown = document.querySelector('.faculty-drop-down a');
-    const dropDownIcon = document.querySelector('.faculty-drop-down a img');
-    const bio = document.querySelector('.faculty-members-description');
+    let dropDown = Array.from(document.getElementsByClassName('drop-down-link'));
+    
    
-    dropDown.addEventListener('click', ()=> {
-      if (bio.style.display === "block" && dropDownIcon.style.animation) {
-        bio.style.display = "none";
-        
-        dropDownIcon.style.animation = ''
-      } else {
-        bio.style.display = "block";
-        dropDownIcon.style.animation = `dropDownUp 0.2s ease forwards`;
-        bio.style.animation = "facultyDescription ";
-      }
-    });
+
+    dropDown.forEach(anchor => {
+      const dropDownIcon = document.querySelector('.drop-icon');
+      const bio = document.querySelector('.faculty-members-description');
+      anchor.addEventListener('click', ()=> {
+     
+        if (bio.style.display === "block" && dropDownIcon.style.animation) {
+          bio.style.display = "none";
+         
+          dropDownIcon.style.animation = ''
+        } else {
+          bio.style.display = "block";
+          dropDownIcon.style.animation = `dropDownUp 0.2s ease forwards`;
+          bio.style.animation = "facultyDescription ";
+        }
+      });
+    })
+  
+
+ 
 
   
 

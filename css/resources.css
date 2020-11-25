@@ -188,7 +188,29 @@
   padding-bottom: 1.1rem;
 }
 
-.weipray-contacts-container a {
+.weipray-contacts-container .weipray-phone h5 {
+  padding-left: 20%;
+}
+
+.weipray-contacts-container .weipray-phone a {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 103.9%;
+  color: var(--bg-secondary);
+  text-decoration: none;
+  padding-left: 20%;
+  padding-bottom: 8.9rem;
+}
+
+.weipray-email {
+  background: #f3f6fc;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+}
+.weipray-contacts-container .weipray-email a {
   font-family: "Kumbh Sans" fallback, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -198,13 +220,6 @@
   text-decoration: none;
   padding-left: 10%;
   margin-bottom: 8.9rem;
-}
-
-.weipray-email {
-  background: #f3f6fc;
-  flex: 1 1 50%;
-  display: flex;
-  flex-direction: column;
 }
 
 /* resources calender */
@@ -254,7 +269,111 @@
     font-size: 6rem;
     line-height: 101.9%;
   }
+
+  .weipray h1 {
+    font-size: 6rem;
+    line-height: 101.9%;
+  }
+  .weipray-desc-left-paras p {
+    font-size: 2.1rem;
+    line-height: 3.5rem;
+  }
+
+  .weipray-parents-card p {
+    font-size: 1.6rem;
+    width: 90%;
+  }
 }
+
+@media screen and (max-width: 1060px) {
+  .weipray-parents-card p {
+    padding-left: 2rem;
+  }
+
+  .weipray-parents-card h3 {
+    padding-left: 2rem;
+  }
+  .weipray-parents-card h4 {
+    padding-left: 2rem;
+  }
+
+  .weipray-testimonial-quote {
+    margin-left: 2rem;
+  }
+  .weipray-parents-testimonial-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .weipray-desc-left-paras p {
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    width: 90%;
+  }
+
+  .weipray-parents-testimonial-container {
+    width: 95%;
+  }
+
+  .weipray-desc-right-paras p {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    color: var(--primary-color);
+    width: 90%;
+  }
+  .weipray-contacts-container .weipray-email a {
+    font-size: 2.6rem;
+  }
+  .weipray-contacts-container .weipray-phone a {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .weipray-desc-container {
+    flex-direction: column;
+  }
+  .weipray-desc-right-paras p:last-child {
+    padding-bottom: 4rem;
+  }
+  .weipray-desc-left-paras p {
+    padding-left: 0%;
+  }
+  .weipray-parents-testimonial-container {
+    flex-wrap: wrap;
+  }
+  .weipray-parents-card {
+    width: 100%;
+    margin-right: 0;
+  }
+  .weipray-contacts-container .weipray-email a {
+    font-size: 2.3rem;
+  }
+  .weipray-contacts-container .weipray-phone a {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .weipray-contacts-container {
+    flex-direction: column;
+  }
+  .weipray-contacts-container .weipray-phone {
+    padding-bottom: 8.9rem;
+  }
+  .weipray-parents-testimonial-container:last-child {
+    margin-bottom: 11.1rem;
+  }
+  .weipray-contacts-container .weipray-phone h5 {
+    padding-left: 10%;
+  }
+
+  .weipray-contacts-container .weipray-phone a {
+    padding-left: 10%;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .resources-calender h1 {
     font-size: 4rem;

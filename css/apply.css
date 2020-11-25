@@ -300,5 +300,16 @@
   }
   .instructions:last-child a {
     margin-left: 5%;
+    margin-top: 2rem;
+  }
+  .instructions-box h2 {
+    font-size: 2.8rem;
+    line-height: 156.88%;
+    padding-top: 1.8rem;
+    padding-left: 2.5rem;
+    margin-right: 2rem;
+  }
+  .instructions-box:last-child {
+    margin-bottom: 15%;
   }
 }

@@ -233,11 +233,18 @@
 
 .daily-life-images {
   display: flex;
+  width: 100%;
+}
+
+.daily-life-images-left,
+.daily-life-images-right {
+  width: 100%;
 }
 
 .daily-life-images img {
   width: 100%;
-  flex: 1;
+  flex-grow: 1;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -416,8 +423,16 @@
   width: 85%;
   padding-bottom: 2rem;
 }
+.beyond-classroom-wrapper-top-paras-images {
+  display: flex;
+}
 
-.beyond-classroom-left > img {
+.beyond-classroom-wrapper-top-paras-images1 > img {
+  width: 100%;
+  height: auto;
+}
+
+.beyond-classroom-wrapper-top-paras-images2 > img {
   width: 100%;
   height: auto;
 }
@@ -450,19 +465,36 @@
   line-height: 2.5rem;
   color: var(--primary-color);
 }
+.beyond-classroom-quote {
+  flex: 1 1 50%;
+}
 
 .beyond-classroom-right {
   flex: 1 1 50%;
 }
 
+.beyond-classroom-right-para {
+  flex: 1 1 50%;
+}
+
 .beyond-classroom-right-para > p:first-child {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 2rem;
   line-height: 139.88%;
   color: var(--primary-color);
   padding-bottom: 2.1rem;
   width: 95%;
+}
+
+.beyond-classroom-right-para p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  color: var(--primary-color);
+  width: 90%;
+  padding-bottom: 2rem;
 }
 
 .beyond-classroom-right p {
@@ -484,6 +516,26 @@
 }
 
 .beyond-classroom-right h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: var(--primary-color);
+  padding-bottom: 2.5em;
+}
+.beyond-classroom-wrapper-top-paras-bottom {
+  display: flex;
+}
+
+.beyond-classroom-right-para h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 156.4%;
+  color: var(--primary-color);
+}
+
+.beyond-classroom-right-para h4 {
   font-style: normal;
   font-weight: 300;
   font-size: 1.6rem;
@@ -560,6 +612,10 @@
   align-items: center;
 }
 
+.beyond-bottom-right-2 {
+  flex: 1 1 50%;
+}
+
 .beyond-bottom-left-2 {
   flex: 1 1 40%;
   display: flex;
@@ -567,11 +623,13 @@
   justify-content: center;
 
   margin: 10% auto;
+  margin-left: 10%;
 }
 
 .classroom-quote-icons {
   display: flex;
-  margin-left: 20%;
+
+  flex: 1 1 50%;
 }
 
 .classroom-quote-icons img {
@@ -584,7 +642,7 @@
 .beyond-classroom-quote-2 {
   display: flex;
   flex-direction: column;
-  margin-left: 20%;
+  align-items: flex-start;
 }
 
 .beyond-classroom-quote-2 p {
@@ -593,7 +651,8 @@
   font-size: 2.6rem;
   line-height: 139.88%;
   color: var(--primary-color);
-  width: 70%;
+  width: 80%;
+  padding-bottom: 3.5rem;
 }
 
 .beyond-classroom-quote-2 h5 {
@@ -665,7 +724,7 @@
 }
 
 .about-heal-bottom-images {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   padding-top: 11.9rem;
@@ -678,8 +737,8 @@
   margin-right: 1rem;
 }
 
-.about-heal-bottom-images img:first-child {
-  margin-right: 1rem;
+.about-heal-bottom-images1 {
+  margin-right: 3rem;
 }
 
 .about-heal-bottom-paras {
@@ -861,6 +920,7 @@
   color: var(--primary-color);
   padding-top: 12.9rem;
   padding-bottom: 5rem;
+  width: 85%;
 }
 
 .about-last-section-wrapper p {
@@ -870,6 +930,7 @@
   line-height: 3.8rem;
   color: var(--primary-color);
   padding-bottom: 3.6rem;
+  width: 90%;
 }
 
 .about-last-section-wrapper h3 {
@@ -886,6 +947,233 @@
   line-height: 2.5rem;
   color: var(--primary-color);
   padding-bottom: 12.8rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-academy-life h1 {
+    font-size: 8rem;
+  }
+  .true-education-wrapper h1 {
+    font-size: 8rem;
+  }
+
+  .about-daily-life-top-wrapper h1 {
+    font-size: 8rem;
+  }
+  .beyond-classroom-wrapper-top h1 {
+    font-size: 8rem;
+  }
+  .about-heal-top h1 {
+    font-size: 8rem;
+  }
+  .beyond-classroom-quote-2 p {
+    font-size: 2.1rem;
+    line-height: 134%;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .true-education-grid-2-left p {
+    width: 90%;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .true-education-grid-2-right p {
+    width: 90%;
+    /* font-size: 1.8rem;
+    line-height: 2.6rem; */
+  }
+  .true-education-grid-2 h3 {
+    padding-left: 15%;
+  }
+
+  .true-education-grid-2 h4 {
+    padding-left: 15%;
+  }
+  .about-daily-life-top-wrapper h1 {
+    padding-top: 7.3rem;
+    padding-bottom: 5.2rem;
+  }
+  .beyond-bottom-left-2 {
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .beyond-classroom-quote-2 p {
+    font-size: 1.9rem;
+    line-height: 131%;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-academy-life h1 {
+    font-size: 6rem;
+  }
+  .true-education-wrapper h1 {
+    font-size: 6rem;
+    padding-bottom: 3.5rem;
+    padding-top: 7.3rem;
+  }
+
+  .about-daily-life-top-wrapper h1 {
+    font-size: 6rem;
+  }
+
+  .beyond-classroom-wrapper-top h1 {
+    font-size: 6rem;
+    padding-top: 5rem;
+  }
+  .about-heal-top h1 {
+    font-size: 6rem;
+    padding-top: 6.9rem;
+    padding-bottom: 2rem;
+  }
+
+  .true-education-wrapper > p {
+    width: 90%;
+  }
+  .about-true-education-grid {
+    flex-direction: column;
+  }
+  .true-education-grid-2-left,
+  .true-education-grid-2-right {
+    width: 100%;
+  }
+
+  .about-true-education-grid p {
+    width: 85%;
+    padding-bottom: 1.8rem;
+  }
+  .true-education-grid-2 {
+    flex-direction: column;
+  }
+
+  .true-education-grid-2-left p {
+    padding-left: 0;
+  }
+  .daily-life-images {
+    flex-direction: column;
+  }
+
+  .daily-life-bottom-para {
+    flex-direction: column;
+  }
+  .daily-life-bottom-container-para-top p {
+    width: 85%;
+  }
+
+  .daily-life-bottom-container-para-bottom p {
+    width: 85%;
+  }
+
+  .beyond-classroom-wrapper-top > p {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+
+  .daily-life-bottom-para p {
+    width: 90%;
+    padding-bottom: 2rem;
+  }
+
+  .daily-life-bottom-container h4 {
+    padding-bottom: 4rem;
+  }
+
+  .beyond-classroom-wrapper-top-paras {
+    flex-direction: column;
+  }
+
+  .beyond-classroom-wrapper-top-paras-bottom {
+    flex-direction: column;
+  }
+
+  .beyond-classroom-bottom-container1 {
+    flex-direction: column;
+  }
+  .beyond-classroom-bottom-container2 {
+    flex-direction: column-reverse;
+  }
+
+  .about-heal-para {
+    flex-direction: column;
+  }
+
+  .about-heal-bottom-images {
+    flex-direction: column;
+  }
+  .about-heal-bottom-images1 {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .about-heal-bottom-paras-last {
+    flex-direction: column;
+  }
+  .about-kindness-wrapper-top {
+    flex-direction: column;
+  }
+  .about-kindness-wrapper-bottom-img {
+    flex-direction: column;
+  }
+  .beyond-classroom-wrapper-top-paras-images {
+    flex-direction: column;
+  }
+
+  .about-kindness-top-right {
+    margin-left: 10%;
+  }
+  .kindness-quote > p:first-child {
+    width: 85%;
+    font-size: 2.3rem;
+    line-height: 135%;
+  }
+  .kindness-quote p {
+    width: 85%;
+    padding-bottom: 1rem;
+  }
+  .kindness-quote h5 {
+    padding: 2rem 0;
+  }
+  .beyond-classroom-quote h5 {
+    padding-bottom: 4rem;
+  }
+  .beyond-classroom-wrapper-bottom {
+    margin-top: 5rem;
+  }
+  .beyond-bottom-right1 h4 {
+    padding-bottom: 4rem;
+  }
+
+  .about-heal-para p {
+    padding-bottom: 2rem;
+  }
+  .about-heal-bottom-paras-last p {
+    padding-bottom: 2rem;
+  }
+  .about-last-section-wrapper > p:first-child {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+    width: 95%;
+  }
+  .about-last-section-wrapper p {
+    font-size: 1.9rem;
+    line-height: 3.5rem;
+    width: 95%;
+  }
+  .about-kindness-wrapper-bottom-paras h4 {
+    padding-bottom: 12rem;
+  }
+  .about-kindness-wrapper-bottom {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-academy-life-hero {
+    height: 45rem;
+  }
 }
 
 /* about Faculty css */
@@ -930,27 +1218,35 @@
   width: 80%;
   margin: 0 auto;
   display: flex;
+  height: 100%;
 }
 
-.faculty-cards-left,
-.faculty-cards-right {
-  flex: 1 1 50%;
+.faculty-members-container:last-child {
+  margin-bottom: 10%;
+}
+
+.faculty-cards-left {
+  flex: 1 1 45%;
   margin-right: 3rem;
+  margin-bottom: 5.2rem;
+  height: 100%;
 }
 
-.faculty-members-card-open,
-.faculty-members-card-closed {
-  width: 100%;
-  margin-bottom: 6.4rem;
+.faculty-cards-right {
+  flex: 1 1 45%;
+
+  margin-bottom: 5.2rem;
+  height: 100%;
 }
 
 .faculty-card-image {
   width: 100%;
+  height: 100%;
 }
 
 .faculty-card-image-holder {
   width: 100%;
-
+  height: 100%;
   height: 35.1rem;
 }
 
@@ -969,6 +1265,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .name-position {
@@ -1150,6 +1447,25 @@
   color: #97a0af;
 }
 
+.input-wrapper textarea {
+  height: 6.3rem;
+  display: block;
+  width: 90%;
+  background: #fafbfc;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 2.2rem 0.7rem 2.1rem 1.7rem;
+  outline: none;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #97a0af;
+  resize: none;
+}
+
 .contact-page-left button {
   width: 15rem;
   height: 5.5rem;
@@ -1161,6 +1477,7 @@
   font-size: 1.8rem;
   line-height: 103.9%;
   color: #333333;
+  margin-bottom: 10%;
 }
 
 .contact-page-right {
@@ -1210,4 +1527,101 @@
 .about-contact-map img {
   width: 100%;
   height: auto;
+}
+
+/* mediaqueries */
+@media screen and (max-width: 1296px) {
+  .name-position h3 {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-contact-wrapper > h1 {
+    font-size: 8rem;
+  }
+  .contact-page-left h1 {
+    font-size: 4rem;
+  }
+  .faculty-staff h1 {
+    font-size: 8rem;
+  }
+
+  .contact-company-wrapper p,
+  .contact-company-wrapper a {
+    font-size: 2.1rem;
+    line-height: 101.9%;
+    width: 85%;
+  }
+
+  .faculty-members-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .faculty-members-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about-contact-wrapper > h1 {
+    font-size: 6rem;
+  }
+  .contact-company-wrapper p,
+  .contact-company-wrapper a {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about-contact-container {
+    flex-direction: column;
+  }
+
+  .contact-page-right-wrapper {
+    margin-left: 10%;
+    margin-top: 8.8rem;
+    padding-bottom: 2rem;
+  }
+  .faculty-members-container {
+    flex-direction: column;
+  }
+  .faculty-cards-left,
+  .faculty-cards-right {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-contact-wrapper > h1 {
+    font-size: 6rem;
+  }
+
+  .faculty-staff h1 {
+    font-size: 8rem;
+    padding-top: 5rem;
+  }
+
+  .contact-page-left h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-company-wrapper h3 {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+  }
+  .input-wrapper input {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  .input-wrapper textarea {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
 }

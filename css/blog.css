@@ -153,6 +153,26 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .single-blog-post {
+    margin-right: 0.2rem;
+  }
+
+  .single-blog-filters {
+    padding-left: 2rem;
+  }
+  .single-blog-filters a {
+    font-size: 1rem;
+  }
+  .single-blog-post a h2 {
+    padding-left: 2rem;
+  }
+  .single-blog-post p {
+    padding-left: 2rem;
+    width: 95%;
+  }
+}
+
 /* 2020 mission trip Css */
 .twentytwenty-mission-trip {
   width: 100%;
@@ -459,12 +479,17 @@
     padding-bottom: 2.5rem;
   }
 
+  .twentytwenty-mission-trips-info {
+    margin-left: 5%;
+  }
+
   .twentytwenty-mission-trips-info a {
     font-size: 1rem;
   }
 
   .twentytwenty-blog-photo-container h2 {
     font-size: 3.5rem;
+    padding-top: 10rem;
   }
 
   .comments-number h1 {
@@ -474,10 +499,19 @@
   .commentedby p {
     font-size: 1.4rem;
     line-height: 148.88%;
-    width: 85%;
+    width: 95%;
   }
   .submit-a-comment textarea {
     width: 100%;
+  }
+  .twentytwenty-mission-trip-info > p:first-child {
+    width: 100%;
+  }
+  .twentytwenty-mission-trip-info p {
+    width: 100%;
+  }
+  .commentedby a {
+    font-size: 1.4rem;
   }
 }
 
@@ -625,6 +659,20 @@
     padding-top: 5.9rem;
     padding-bottom: 2.4rem;
   }
+
+  @media screen and (max-width: 520px) {
+    .mission-trip-vid-container a {
+      font-size: 1.9rem;
+    }
+    .twentynineteen-mission-trip-para p {
+      font-size: 1.8rem;
+      line-height: 2.9rem;
+      width: 95%;
+    }
+    .mission-trip-vid-container:last-child {
+      margin-bottom: 10rem;
+    }
+  }
 }
 
 /* 2018 mission trip css */
@@ -656,4 +704,14 @@
   color: var(--primary-color);
   padding-top: 3.1rem;
   padding-bottom: 23.5rem;
+}
+
+@media screen and (max-width: 520px) {
+  .twentytwenty-blog-photo-container p {
+    padding-bottom: 10rem;
+    font-size: 1.6rem;
+  }
+  .twentytwenty-blog-photo-container {
+    width: 90%;
+  }
 }
