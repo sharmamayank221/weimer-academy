@@ -845,7 +845,7 @@ button#slick-slide-control03 {
 
 .home-give-section {
   flex: 1 0 50%;
-  height: 100%;
+  height: 46.4rem;
   position: relative;
 }
 
@@ -858,7 +858,7 @@ button#slick-slide-control03 {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 15%;
+  justify-content: center;
   padding-left: 20%;
 }
 
@@ -870,14 +870,20 @@ button#slick-slide-control03 {
 
 .home-apply-section {
   flex: 1 0 50%;
+  height: 46.4rem;
   display: flex;
-  padding-bottom: 5%;
+  flex-direction: column;
+  justify-content: center;
+
   background: var(--bg-secondary);
 }
 
 .home-apply-section-wrapper {
   padding-left: 10%;
-  padding-top: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* media query give and apply section */
@@ -891,9 +897,6 @@ button#slick-slide-control03 {
   }
   .give-apply-section p {
     width: 60%;
-  }
-  .home-apply-section {
-    padding-bottom: 15%;
   }
 }
 

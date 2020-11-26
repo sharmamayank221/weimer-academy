@@ -264,6 +264,120 @@
   height: auto;
 }
 
+/* weimer calaender 2020 Css */
+.weimer-calender-2020 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.months-tab {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.months-changer {
+  display: flex;
+  align-items: center;
+}
+
+.months-name {
+  margin: 0 1.8rem;
+}
+
+.months-name h2 {
+  font-family: "Kumbh Sans" fallback, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 103.9%;
+  color: #021032;
+}
+
+.print a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 117.9%;
+  color: #021032;
+  text-decoration: none;
+  padding: 1rem 3.7rem;
+  background: #f3f6fc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.print a img {
+  margin-right: 5px;
+}
+
+.days-tab {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--bg-yellow);
+  border-radius: 1rem;
+}
+
+.calender-data {
+  border: 1px solid #edeef9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.name-of-days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 14.28%;
+  height: 6.9rem;
+}
+.name-of-days:not(:last-child) {
+  border-right: 1px solid #ffffff;
+}
+
+.name-of-days h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 117.9%;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.days-number {
+  width: 100%;
+  height: 100%;
+}
+
+.date-number-top {
+  display: flex;
+  justify-content: space-between;
+}
+.date-number-middle {
+  display: flex;
+  justify-content: space-between;
+}
+.date-number-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-numbers {
+  flex: 1 1 14.28%;
+  height: 9.5rem;
+  border-bottom: 1px solid #edeef9;
+}
+
+.date-numbers:not(:last-child) {
+  border-right: 1px solid #edeef9;
+}
+
 @media screen and (max-width: 1200px) {
   .resources-calender h1 {
     font-size: 6rem;
